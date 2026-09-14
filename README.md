@@ -30,6 +30,15 @@ LED テスター
 
 &nbsp;
 
+【 測定用基板シリーズ 】  
+
+- [定電流ダイオード/定電圧ダイオード/FET 簡易測定器](https://github.com/suwasakix/simple_crd_zd_fet_tester)  
+- [トランジスタ hFE 簡易測定器](https://github.com/suwasakix/simple_hfe_tester)  
+- [FET バイアス測定器](https://github.com/suwasakix/fet_bias_tester)  
+- LED テスター  
+
+&nbsp;
+
 ## ガーバーデータのダウンロード - Download gerber data
 
 こちらのページから「led_tester-gerber.zip」のファイルをダウンロードしてください。  
@@ -42,7 +51,7 @@ LED テスター
 
 ## 回路図 - PCB schematic
 
-<a href="./docs/images/led_tester_circuit.gif"><img src="./docs/images/led_tester_circuit.gif" width="720" height="312"></a>
+<a href="./docs/images/led_tester_circuit.gif"><img src="./docs/images/led_tester_circuit.gif" width="720" height="288"></a>
 
 定電流回路はオペアンプを使用したオーソドックスな回路です。オペアンプには差動入力（＋端子と－端子）が同じ電圧となろうとする性質があるので、LED に電流が流ているとき VR1 の両端にかかる電圧と R1 の両端にかかる電圧はほぼ同じ値になります（R2 に電流はほとんど流れません）。VR1 を調整することによって LED に流れる電流をコントロールすることができるという仕組みです。  
 
